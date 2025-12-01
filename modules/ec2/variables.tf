@@ -38,7 +38,3 @@ variable "volume_type" {
 variable "environment" {
   type = string
 }
-
-variable "user_data" {
-  type = string
-}

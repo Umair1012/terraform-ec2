@@ -1,19 +1,17 @@
-# install nginx
-
 #!/bin/bash
 
 # Update packages
-sudo dnf update -y
+apt update -y
 
 # Install NGINX
-sudo dnf install nginx -y
+apt install nginx -y
 
 # Start NGINX
-sudo systemctl start nginx
+systemctl start nginx
 
 # Enable NGINX to start on boot
-sudo systemctl enable nginx
+systemctl enable nginx
 
 # Optional: Create a test HTML page
-echo '<h1>Hello from Amazon Linux 2023 NGINX!</h1>' | sudo tee /usr/share/nginx/html/index.html
+echo '<h1>Hello from Ubuntu Linux 2023 NGINX!</h1>' | sudo tee /var/www/html/index.html
 
